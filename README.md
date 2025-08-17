@@ -7,7 +7,6 @@
   <a href="https://github.com/inwpu">
     <img alt="Stars" src="https://img.shields.io/github/stars/inwpu?affiliations=OWNER&style=for-the-badge">
   </a>
-  <img alt="Rating" src="https://img.shields.io/badge/rating-4.9%2F5-brightgreen?style=for-the-badge">
 </p>
 
 ---
