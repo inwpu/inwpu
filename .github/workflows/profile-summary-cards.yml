@@ -1,0 +1,22 @@
+name: Generate profile summary cards
+
+on:
+  schedule:
+    - cron: "0 0 * * *"       # 每天跑一次
+  workflow_dispatch:          # 允许手动触发
+  push:
+    branches: [ "main" ]      # 当你改 README 时也会触发
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: inwpu
+          THEME: 2077
