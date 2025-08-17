@@ -2,10 +2,13 @@ name: Generate profile summary cards
 
 on:
   schedule:
-    - cron: "0 0 * * *"       # 每天跑一次
-  workflow_dispatch:          # 允许手动触发
+    - cron: "0 0 * * *"
+  workflow_dispatch:
   push:
-    branches: [ "main" ]      # 当你改 README 时也会触发
+    branches: [ "main" ]
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -19,4 +22,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           USERNAME: inwpu
-          THEME: 2077
+          BRANCH_NAME: main         # 可省略，默认就是 main
+          UTC_OFFSET: 8             # 你在东八区就写 8
+          EXCLUDE: ""               # 需要排除的语言，逗号分隔；没有就留空
+          AUTO_PUSH: true           # 生成后自动提交
