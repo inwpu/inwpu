@@ -12,7 +12,7 @@
 
 ---
 
-### 📊 GitHub Stats (Theme: 2077)
+### GitHub Stats (Theme: 2077)
 
 <!-- 这些卡片由 Actions 自动生成到 profile-summary-card-output/2077/ 目录下 -->
 <p align="center">
@@ -29,7 +29,6 @@
 
 ---
 
-<!-- 轻量备选：如果你想直接用远程服务而不用生成文件，可以解开下面注释 -->
 <!--
 ### 📈 Lightweight alt (github-readme-stats)
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=inwpu&show_icons=true&include_all_commits=true&count_private=true&theme=radical)
@@ -38,7 +37,4 @@
 
 ### 🔗 Links
 - Blog: https://github.com/inwpu
-- X/Twitter: —
-- Email: —
-
-> Tip: 想切换样式，可把上面链接里的 `2077` 改成 `radical`、`tokyonight`、`dracula` 等主题名。
+- Email: aisnnu@qq.com
